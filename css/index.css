@@ -60,3 +60,8 @@ body {
   justify-content: space-between;
   margin: 10px 15px;
 }
+.categories {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}

@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Machine</title>
-    <link rel="stylesheet" href="index.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">  
+    
 </head>
 <body class="bgChange">
     <div id="mainDiv">
         <div id="randQuote">Random Quotes Generator</div><br/>
+        <div id="dropDown">
+            <form class="form-inline" action="/action_page.php">
+                <div class="form-group">
+                  <label class="categories">Categories: &nbsp;&nbsp;</label>
+                    <select id="selectQuote" class="form-control">
+                        <option value="1">Random Quotes</option>
+                        <option value="2">Business Quotes</option>
+                        <option value="3">Inspirational Quotes</option>
+                        <option value="4">Advice Quotes</option>
+                        <option value="5">Funny Quotes</option>
+                        <!-- <option value="6">Happiness Quotes</option> -->
+                        <option value="7">Love Quotes</option>
+                        <!-- <option value="8">Success Quotes</option>
+                        <option value="9">Wisdom Quotes</option> -->
+                        <option value="10">Programming Quotes</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        
+        <br/>
         <div id="quote-box">
 
             <div id="textDiv">
@@ -31,7 +54,7 @@
                     </a>
                     <a href="https://twitter.com/intent/tweet?hashtags=quotes&related=aeskay&text=%22Two%20things%20are%20infinite:%20the%20universe%20and%20human%20stupidity;%20and%20I%27m%20not%20sure%20about%20the%20universe.%22%20%E2%80%95%20Albert%20Einstein" 
                         class="fa-tumblr-square-a" 
-                        target="_blank" title="Share on Facebook"
+                        target="_blank" title="Share on Tumblr"
                         style="text-decoration: none;">
                         <i class="fa fa-tumblr-square fa-3x socIcon colorChange" aria-hidden="true" id=""></i>
                     </a>
@@ -43,6 +66,6 @@
         </div>
         <div style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 15px">By <a href="codepen.io/aeskay" style="color: white;" target="_blank">aeskay</a></div>
     </div>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
