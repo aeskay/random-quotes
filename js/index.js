@@ -84,7 +84,7 @@ const mainDiv = document.getElementById('mainDiv'),
         }
         
         else if (options == 10) {
-            fetch('http://quotes.stormconsultancy.co.uk/popular.json')
+            fetch('https://raw.githubusercontent.com/aeskay/quotes/master/programming.json')
             .then((json1) => {
                 return json1.json();  
             })
